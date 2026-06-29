@@ -15,6 +15,14 @@ export const profile = {
     "Software engineering student building machine-learning systems for problems that matter. I like the whole arc: from a custom training environment to a deployed, load-tested API someone can actually use.",
 };
 
+// Email controls open the visitor's Gmail compose in a new tab, pre-addressed to LJ.
+const EMAIL_SUBJECT = "Hello LJ";
+export const gmailComposeUrl =
+  "https://mail.google.com/mail/?view=cm&fs=1&to=" +
+  encodeURIComponent(profile.email) +
+  "&su=" +
+  encodeURIComponent(EMAIL_SUBJECT);
+
 export const projects = [
   {
     id: "01",

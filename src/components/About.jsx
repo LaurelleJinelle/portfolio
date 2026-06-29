@@ -18,15 +18,21 @@ export default function About() {
               training environment to deploying a monitored, load-tested API.
             </p>
             <p className="about-body">
-              My through-line is applying ML to infrastructure problems in African contexts:
-              rationing electricity across distribution feeders, triaging medical emergencies, and
-              reading chest X-rays. I care about models that leave the notebook — most of my projects
-              ship with a real interface and a retraining path, not just a metric.
+              I care about models that leave the notebook — most of my projects
+              ship with a real interface and a retraining path, not just a metric. I would rather hand someone a tool
+              they can open in a browser, so I tend to follow a project all the way to the part where a real person uses it.
             </p>
             <p className="about-body">
-              Currently a Software Engineering student at {education.school} ({education.period}),
-              {" "}
-              {education.detail}.
+              What pulls my attention is the seam where technology meets access &mdash;
+              finance, energy, health systems, you name it, where careful
+              engineering produces real impact. I am drawn more to the unglamorous work of making models dependable,
+              and I enjoy jumping into an unfamiliar domain until I understand it well
+              enough to build for it.
+            </p>
+            <p className="about-body">
+              I am finishing a {education.degree} at {education.school}. Outside the ML
+              work I build product frontends as part of a small open-source team &mdash;
+              a reminder that the hardest part of engineering is rarely the algorithm.
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-import { profile, projects } from "../data.js";
+import { profile, projects, gmailComposeUrl } from "../data.js";
 import { useRotator, GithubIcon, ArrowIcon } from "./hooks.jsx";
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
         <a href={profile.github} target="_blank" rel="noreferrer" className="btn btn-ghost">
           <GithubIcon /> GitHub
         </a>
-        <a href={"mailto:" + profile.email} className="btn btn-ghost">
+        <a href={gmailComposeUrl} target="_blank" rel="noreferrer" className="btn btn-ghost">
           Email
         </a>
       </div>

@@ -1,4 +1,4 @@
-import { profile } from "../data.js";
+import { profile, gmailComposeUrl } from "../data.js";
 import { useReveal, GithubIcon } from "./hooks.jsx";
 
 export default function Footer() {
@@ -8,11 +8,13 @@ export default function Footer() {
     <footer className="footer wrap reveal" ref={ref} id="contact">
       <span className="eyebrow footer-eyebrow">Let&apos;s talk</span>
       <h2>
-        <a href={"mailto:" + profile.email}>Start a conversation.</a>
+        <a href={gmailComposeUrl} target="_blank" rel="noreferrer">
+          Start a conversation.
+        </a>
       </h2>
 
       <div className="footer-links">
-        <a href={"mailto:" + profile.email} className="btn btn-primary">
+        <a href={gmailComposeUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
           {profile.email}
         </a>
         <a href={profile.github} target="_blank" rel="noreferrer" className="btn btn-ghost">
